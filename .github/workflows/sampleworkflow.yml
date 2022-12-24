@@ -9,6 +9,7 @@ jobs:
         node-version: [8.x, 10.x,12.x]
         os: [macos-latest, windows-latest, ubuntu-18.04]
     steps:
+    - uses: actions/checkout@v1
     - name: step name
       with:
         node-version: ${{ matrix.node-version }}
