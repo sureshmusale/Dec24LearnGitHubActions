@@ -3,7 +3,7 @@ name: Sampleworkflow
 on: [push, workflow_dispatch]
 jobs:
   jobname: 
-    runs-on: ${{ matrix.os }}
+    runs-on: ${{ ubuntu-18.04 }}
     strategy:
       matrix:
         node-version: [8.x, 10.x,12.x]
