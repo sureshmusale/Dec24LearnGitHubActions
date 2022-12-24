@@ -3,14 +3,11 @@ name: Sampleworkflow
 on: [push, workflow_dispatch]
 jobs:
   jobname: 
-    runs-on: ${{ ubuntu-18.04 }}
-    strategy:
-      matrix:
-        node-version: [8.x, 10.x,12.x]
-        os: [macos-latest, windows-latest, ubuntu-18.04]
+    runs-on: ${{ ubuntu-latest }}
+
     steps:
     - uses: actions/checkout@v1
     - name: step name
       with:
-        node-version: ${{ matrix.node-version }}
+        
         run: echo happy
