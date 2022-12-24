@@ -3,7 +3,7 @@ name: Sampleworkflow
 on: [push, workflow_dispatch]
 jobs:
   jobname: 
-    runs-on: ${{ ubuntu-latest }}
+    runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v1
