@@ -8,6 +8,4 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: step name
-      with:
-        
-        run: echo happy
+      run: echo happy
