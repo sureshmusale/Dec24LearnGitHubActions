@@ -31,3 +31,12 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+  UAT:
+    runs-on: ubuntu-latest
+    environment: UAT
+    needs: dev
+    if: ${{ always() }}
+
+    steps: 
+    - name: UAT workflow
+      run: echo Hello, UAT!
