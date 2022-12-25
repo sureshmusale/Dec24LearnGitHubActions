@@ -28,6 +28,7 @@ jobs:
     runs-on: ubuntu-latest
     environment: UAT
     needs: dev
+    if: ${{ always() }}
 
     steps: 
     - name: UAT workflow
@@ -37,6 +38,7 @@ jobs:
     runs-on: ubuntu-latest
     environment: PROD
     needs: UAT
+    if: ${{ always() }}
 
     steps: 
     - name: PROD workflow
