@@ -17,11 +17,10 @@ jobs:
           
       - id: step2
         run: echo "test=world" >> $GITHUB_OUTPUT
-      - id: step3
-        
+      - id: step3        
         run: |
          tagvar=sureshmahesh
-         echo "test=$tagvar" >> $GITHUB_OUTPUT
+         echo test=$tagvar >> $GITHUB_OUTPUT
   job2:
     runs-on: ubuntu-latest
     needs: job1
