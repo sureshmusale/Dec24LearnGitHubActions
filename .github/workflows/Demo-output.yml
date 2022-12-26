@@ -1,4 +1,7 @@
 name: output demo
+on:
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
 jobs:
   job1:
     runs-on: ubuntu-latest
