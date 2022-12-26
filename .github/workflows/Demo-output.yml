@@ -20,7 +20,7 @@ jobs:
       - id: step3        
         run: |
          tagvar=sureshmahesh
-         echo test=$tagvar >> $GITHUB_OUTPUT
+         echo tagname=$tagvar >> $GITHUB_OUTPUT
   job2:
     runs-on: ubuntu-latest
     needs: job1
